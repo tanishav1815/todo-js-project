@@ -66,8 +66,10 @@ function taskonscreen() {
        
     } else {
 
-        child.innerHTML = `${storedtxt} <hr> <i style="display: block; color: brown ; cursor: pointer;position: absolute; top: 300px; right: 20px;" id="addit" onclick="addit(this)" class="fa-solid fa-circle-plus"></i>
-        <i style="display: block; color: brown; position: absolute; top: 300px; right: 210px;" id="deletecan" onclick="deletecan(this)" class="fa-solid fa-trash"; cursor: pointer></i>`
+        child.innerHTML = `${storedtxt} <hr> <i style="display: block; color: brown ; cursor: pointer;position: absolute; 
+        top: 300px; right: 20px;" id="addit" onclick="addit(this)" class="fa-solid fa-circle-plus"></i>
+        <i style="display: block; color: brown; position: absolute; top: 300px; right: 210px;
+        " id="deletecan" onclick="deletecan(this)" class="fa-solid fa-trash"; cursor: pointer></i>`
     }
 }
 
@@ -113,7 +115,10 @@ function inside1() {
 
     let name2 = document.getElementById("name2").value;
 
-    txtt.innerHTML = `<span style = "text-align:left"  class = "innline" >${name2}</span> <span id="show" style="width: 45px; border: 2px solid brown; font-size: 18px;background-color:brown;border-radius:10px;position:relative; top:7px; color:white;font-weight: 800; height: 15px;line-height:15px;float:right;text-decoration: yellow" class= "show">mark</span>`;
+    txtt.innerHTML = `<span style = "text-align:left"  class = "innline" >${name2}</span>
+    <span id="show" style="width: 45px; border: 2px solid brown; font-size: 18px;background-color:brown;
+    border-radius:10px;position:relative; top:7px; color:white;font-weight: 800; height: 15px;
+    line-height:15px;float:right;text-decoration: yellow" class= "show">mark</span>`;
 
 
     $(".show").click(function () {
